@@ -1,0 +1,49 @@
+.example-react-component {
+  margin: 15px 0;
+  background-color: #2d7cf1;
+  color: #FFF;
+  padding: 20px;
+  border-radius: 5px;
+}
+.example-react-component h1 {
+  font-weight: normal;
+  font-size: 1.2rem;
+  padding: 0;
+  margin: 0;
+}
+.example-react-component p {
+  margin: 0;
+  font-size: 0.88rem;
+}
+
+html, body {
+  background-color: #FFF;
+}
+
+body {
+  color: #333;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+}
+@media screen and (min-width: 520px) {
+  body {
+    padding: 20px;
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    padding: 60px;
+    font-size: 1.2rem;
+  }
+}
+
+a:link, a:visited {
+  color: #2d7cf1;
+}
+
+a:hover {
+  color: #ff0077;
+}
+
+/*# sourceMappingURL=index.css.map*/

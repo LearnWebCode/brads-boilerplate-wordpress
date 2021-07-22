@@ -1,0 +1,21 @@
+{
+  "name": "brads-boilerplate-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preview": "npm-run-all --parallel sync start",
+    "sync": "browser-sync start -p 'myexample.local' --files '**/*.php' 'build/*.js' 'build/*.css'",
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "*",
+    "browser-sync": "^2.27.4",
+    "npm-run-all": "^4.1.5"
+  }
+}

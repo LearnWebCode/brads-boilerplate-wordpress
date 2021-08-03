@@ -2,6 +2,8 @@
 
 This repo contains one folder that is an example theme, and another folder that is an example block-type plugin. Both folders use the official [@wordpress/scripts](https://www.npmjs.com/package/@wordpress/scripts) package to power the JS(X) and SCSS bundling.
 
+This repo is part of [one of my YouTube videos, check it out for a more detailed walkthrough](https://www.youtube.com/watch?v=NKqogVcqDHA).
+
 After placing one of the folders in your WordPress **themes** or **plugins** folders, you then:
 
 1. Point your terminal towards the new example folder.

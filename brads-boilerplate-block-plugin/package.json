@@ -14,8 +14,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@wordpress/scripts": "^17.0.0",
-    "browser-sync": "^2.27.4",
+    "@wordpress/scripts": "^23.1.0",
+    "browser-sync": "^2.27.10",
     "npm-run-all": "^4.1.5"
   }
 }

@@ -1,0 +1,29 @@
+{
+  "name": "brads-boilerplate-block-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preview": "npm-run-all --parallel sync start tailwindwatch",
+    "sync": "browser-sync start -p 'myexample.local' --files '**/*.php' 'build/*.js' 'build/*.css'",
+    "build": "npm-run-all --sequential buildwp tailwindbuild",
+    "buildwp": "wp-scripts build src/index.js src/frontend.js",
+    "start": "wp-scripts start src/index.js src/frontend.js",
+    "dev": "npm-run-all --parallel start tailwindwatch",
+    "tailwindbuild": "tailwindcss -i ./src/index.css -o ./build/index.css --postcss --minify",
+    "tailwindwatch": "tailwindcss -i ./src/index.css -o ./build/index.css --watch --postcss --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^23.3.0",
+    "autoprefixer": "^10.4.7",
+    "browser-sync": "^2.27.10",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.14",
+    "postcss-nested": "^5.0.6",
+    "tailwindcss": "^3.1.4"
+  }
+}

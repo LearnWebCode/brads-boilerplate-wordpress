@@ -8,8 +8,8 @@
     "sync": "browser-sync start -p 'myexample.local' --files '**/*.php' 'build/*.js' 'build/*.css'",
     "buildwp": "wp-scripts build",
     "build": "npm-run-all --sequential buildwp tailwindbuild",
-    "start": "wp-scripts start",
-    "dev": "npm-run-all --parallel start tailwindwatch",
+    "wpstart": "wp-scripts start",
+    "start": "npm-run-all --parallel start tailwindwatch",
     "tailwindbuild": "tailwindcss -i ./src/index.css -o ./build/index.css --minify",
     "tailwindwatch": "tailwindcss -i ./src/index.css -o ./build/index.css --watch --minify",
     "test": "echo \"Error: no test specified\" && exit 1"

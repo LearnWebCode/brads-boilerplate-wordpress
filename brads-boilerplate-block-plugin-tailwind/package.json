@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "preview": "npm-run-all --parallel sync start tailwindwatch",
+    "preview": "npm-run-all --parallel sync wpstart tailwindwatch",
     "sync": "browser-sync start -p 'myexample.local' --files '**/*.php' 'build/*.js' 'build/*.css'",
     "build": "npm-run-all --sequential buildwp tailwindbuild",
     "buildwp": "wp-scripts build src/index.js src/frontend.js",
-    "start": "wp-scripts start src/index.js src/frontend.js",
-    "dev": "npm-run-all --parallel start tailwindwatch",
+    "wpstart": "wp-scripts start src/index.js src/frontend.js",
+    "start": "npm-run-all --parallel wpstart tailwindwatch",
     "tailwindbuild": "tailwindcss -i ./src/index.css -o ./build/index.css --postcss --minify",
     "tailwindwatch": "tailwindcss -i ./src/index.css -o ./build/index.css --watch --postcss --minify",
     "test": "echo \"Error: no test specified\" && exit 1"

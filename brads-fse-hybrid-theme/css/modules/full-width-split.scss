@@ -1,0 +1,34 @@
+.full-width-split {
+  @include atMedium {
+    display: flex;
+  }
+
+  &__one {
+    flex: 1;
+    padding: 1.6rem 16px;
+    @include atMedium {
+      padding: 40px;
+    }
+
+    .full-width-split__inner {
+      @include atMedium {
+        float: right;
+      }
+    }
+  }
+
+  &__two {
+    flex: 1;
+    background-color: $beige;
+    padding: 1.6rem 16px;
+    @include atMedium {
+      padding: 40px;
+    }
+  }
+
+  &__inner {
+    @media (min-width: 1350px) {
+      width: 610px;
+    }
+  }
+}

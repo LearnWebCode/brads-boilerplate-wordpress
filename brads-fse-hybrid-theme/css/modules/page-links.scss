@@ -1,0 +1,56 @@
+.page-links {
+  position: relative;
+  z-index: 1;
+  background-color: $beige;
+  margin: 0 0 40px 0;
+  @include atSmallMedium {
+    margin: 0 0 40px 20px;
+    width: 300px;
+    float: right;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: normal;
+    text-align: center;
+    padding: 20px 0;
+    background-color: $mainBlue;
+    color: #fff;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      background-color: $mainBlue;
+    }
+  }
+
+  li {
+    border-top: 1px solid adjust-color($beige, $lightness: -14%);
+  }
+
+  li:first-child {
+    border-top: none;
+  }
+
+  &__active,
+  & .current_page_item {
+    text-align: center;
+    background-color: scale-color($beige, $lightness: -7%, $saturation: -10%);
+    color: $mainBlue;
+    font-weight: bold;
+  }
+
+  li a {
+    display: block;
+    text-align: center;
+    padding: 17px 10px;
+    text-decoration: none;
+    color: $mainBlue;
+    transition: all 0.3s;
+  }
+
+  li a:hover {
+    color: adjust-color($mainBlue, $lightness: -6%);
+    background-color: scale-color($beige, $lightness: -9%, $saturation: -12%);
+  }
+}

@@ -1,0 +1,52 @@
+.professor-cards {
+  margin: 0;
+  padding: 0;
+
+  .search-overlay & {
+    padding-top: 21px;
+  }
+}
+
+.professor-card {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  margin-right: 15px;
+  background-color: $darkOrange;
+  overflow: hidden;
+
+  .search-overlay & {
+    width: 180px;
+  }
+
+  &__image {
+    display: block;
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  }
+
+  &:hover &__image {
+    opacity: 0.8;
+    transform: scale(1.1) rotate(4deg);
+  }
+
+  &__name {
+    font-weight: 300;
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    right: 0;
+    padding: 3px 10px;
+    background-color: adjust-color($darkOrange, $alpha: -0.15, $lightness: -9%, $saturation: -6%);
+  }
+
+  &:hover &__name {
+    background-color: adjust-color($darkOrange, $alpha: -0.15, $lightness: -15%, $saturation: -6%);
+  }
+
+  &__list-item {
+    display: inline-block;
+    list-style: none;
+  }
+}

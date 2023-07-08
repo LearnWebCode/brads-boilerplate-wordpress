@@ -1,0 +1,93 @@
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.19rem;
+  padding: 12px 24px;
+  border: none;
+  outline: none;
+
+  &--small {
+    font-size: 0.88rem;
+    padding: 7px 13px;
+    font-weight: 300;
+  }
+
+  &--with-photo {
+    padding-left: 40px;
+    position: relative;
+  }
+
+  &--orange {
+    background-color: $lightOrange;
+  }
+
+  &--orange:hover {
+    background: linear-gradient($lightOrange, scale-color($lightOrange, $lightness: -25%, $saturation: 100%));
+  }
+
+  &--dark-orange {
+    background-color: $darkOrange;
+  }
+
+  &--dark-orange:hover {
+    background: linear-gradient($darkOrange, scale-color($darkOrange, $lightness: -35%, $saturation: 100%));
+  }
+
+  &--blue {
+    background-color: $mainBlue;
+  }
+
+  &--blue:hover {
+    background: linear-gradient(scale-color($mainBlue, $lightness: 11%), $mainBlue);
+  }
+
+  &--yellow {
+    background-color: $mainYellow;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.22);
+  }
+
+  &--yellow:hover {
+    background: linear-gradient($mainYellow, scale-color($mainYellow, $lightness: -29%, $saturation: 100%));
+  }
+
+  &--beige {
+    background-color: $beige;
+    color: #173f58;
+  }
+
+  &--beige:hover {
+    background-color: $mainYellow;
+  }
+
+  &--gray {
+    background-color: #222;
+  }
+
+  &--white {
+    background-color: #fff;
+    color: #173f58;
+  }
+
+  &--white:hover {
+    background-color: #ddd;
+  }
+
+  &--large {
+    font-size: 1.3rem;
+    padding: 16px 34px;
+    border-radius: 7px;
+    @include atSmall {
+      font-size: 1.9rem;
+    }
+  }
+
+  &--inactive {
+    background-color: transparent;
+    cursor: default;
+    color: #333;
+  }
+}

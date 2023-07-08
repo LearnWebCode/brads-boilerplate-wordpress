@@ -1,0 +1,48 @@
+@mixin atSmall {
+  @media (min-width: 530px) {
+    @content;
+  }
+}
+
+@mixin atSmallMedium {
+  @media (min-width: 767px) {
+    @content;
+  }
+}
+
+@mixin atMedium {
+  @media (min-width: 960px) {
+    @content;
+  }
+}
+
+body {
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: $mainBlue;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 1.65em 0;
+}
+
+p,
+li {
+  line-height: 1.65;
+}

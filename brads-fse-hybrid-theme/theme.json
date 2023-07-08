@@ -1,0 +1,55 @@
+{
+  "version": 2,
+  "styles": {
+    "blocks": {
+      "core/button": {
+        "color": {
+          "text": "#FFFFFF",
+          "background": "var(--wp--preset--color--pizza)"
+        }
+      }
+    }
+  },
+  "settings": {
+    "typography": {
+      "fontSizes": []
+    },
+    "blocks": {
+      "core/button": {
+        "border": {
+          "color": false,
+          "radius": false,
+          "style": false,
+          "width": false
+        }
+      }
+    },
+    "color": {
+      "palette": [
+        {
+          "slug": "pizza",
+          "color": "#0d3b66",
+          "name": "Primary"
+        },
+        {
+          "slug": "secondary",
+          "color": "#ee964b",
+          "name": "Secondary"
+        },
+        {
+          "slug": "background",
+          "color": "#FFFFFF",
+          "name": "Background"
+        },
+        {
+          "slug": "foreground",
+          "color": "#333333",
+          "name": "Foreground"
+        }
+      ]
+    },
+    "layout": {
+      "contentSize": "840px"
+    }
+  }
+}

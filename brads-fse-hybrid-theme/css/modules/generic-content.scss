@@ -1,0 +1,64 @@
+.generic-content {
+  p,
+  li {
+    font-size: 1.15rem;
+  }
+
+  blockquote,
+  blockquote p {
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 3.6rem;
+  }
+  h2 {
+    font-size: 3.1rem;
+  }
+  h3 {
+    font-size: 2.6rem;
+  }
+  h4 {
+    font-size: 2.1rem;
+  }
+  h5 {
+    font-size: 1.6rem;
+  }
+  h6 {
+    font-size: 1.15rem;
+  }
+
+  @include atSmall {
+    h1 {
+      font-size: 6.25rem;
+    }
+    h2 {
+      font-size: 5rem;
+    }
+    h3 {
+      font-size: 3.125rem;
+    }
+    h4 {
+      font-size: 2.4rem;
+    }
+    h5 {
+      font-size: 1.9rem;
+    }
+    h6 {
+      font-size: 1.15rem;
+    }
+  }
+}

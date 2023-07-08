@@ -1,0 +1,123 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./our-blocks/quiz/quiz-frontend.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************/
+.paying-attention-frontend {
+  background-color: #ebebeb;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.03);
+  border: 1px solid #dbdbdb;
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 35px;
+}
+.paying-attention-frontend p {
+  font-size: 1.55rem;
+  margin: 0 0 15px 0 !important;
+}
+.paying-attention-frontend ul {
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 767px) {
+  .paying-attention-frontend ul {
+    margin: 0 -20px 0 0;
+    display: flex;
+  }
+}
+.paying-attention-frontend li {
+  vertical-align: middle;
+  font-size: 0.93rem;
+  flex: 1;
+  margin: 0 0 15px 0;
+  padding: 0;
+  list-style: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+@media screen and (min-width: 767px) {
+  .paying-attention-frontend li {
+    margin: 0 20px 0 0;
+  }
+}
+.paying-attention-frontend li:hover {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+.paying-attention-frontend li svg {
+  fill: rgb(0, 158, 47);
+  margin-right: 5px;
+  margin-bottom: -5px;
+}
+.paying-attention-frontend .no-click {
+  cursor: auto;
+}
+.paying-attention-frontend .no-click:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.paying-attention-frontend .fade-incorrect {
+  cursor: auto;
+  opacity: 0.25;
+}
+.paying-attention-frontend .fade-incorrect svg {
+  fill: rgb(235, 0, 0);
+}
+.paying-attention-frontend .correct-message,
+.paying-attention-frontend .incorrect-message {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(156, 226, 177);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.35);
+  transition: all 0.33s ease-out;
+  transform-origin: 50% 50%;
+}
+.paying-attention-frontend .correct-message--visible,
+.paying-attention-frontend .incorrect-message--visible {
+  animation: 2.6s showModal;
+}
+.paying-attention-frontend .correct-message svg,
+.paying-attention-frontend .incorrect-message svg {
+  margin-right: 12px;
+}
+.paying-attention-frontend .correct-message p,
+.paying-attention-frontend .incorrect-message p {
+  margin: 0 !important;
+}
+.paying-attention-frontend .incorrect-message {
+  background-color: rgb(224, 176, 176);
+}
+
+@keyframes showModal {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.2);
+  }
+  15% {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+  85% {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.2);
+  }
+}
+
+/*# sourceMappingURL=quiz-frontend.css.map*/

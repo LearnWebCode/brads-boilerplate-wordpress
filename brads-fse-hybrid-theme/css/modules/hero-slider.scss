@@ -1,0 +1,112 @@
+.hero-slider {
+  position: relative;
+
+  div {
+    outline: none;
+  }
+
+  &__interior {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include atMedium {
+      padding-top: 130px;
+      padding-bottom: 130px;
+    }
+  }
+
+  &__slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__overlay {
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.68);
+    padding: 40px;
+    color: #fff;
+    @include atMedium {
+      width: 50%;
+    }
+  }
+}
+
+.slick-dots {
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  top: 15px;
+  @include atMedium {
+    top: 50px;
+  }
+}
+
+.slick-dots {
+  li {
+    list-style: none;
+    display: inline;
+  }
+
+  li button {
+    display: inline-block;
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    border: none;
+    margin: 0 4px;
+    padding: 0;
+    outline: none;
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+  }
+
+  .slick-active button {
+    background-color: #fff;
+  }
+}
+
+/* GlideJS */
+.glide__bullets {
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  top: 15px;
+  @include atMedium {
+    top: 50px;
+  }
+
+  button {
+    display: inline-block;
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    border: none;
+    margin: 0 3px;
+    padding: 0;
+    outline: none;
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+  }
+
+  button.glide__bullet--active {
+    background-color: #fff;
+  }
+}

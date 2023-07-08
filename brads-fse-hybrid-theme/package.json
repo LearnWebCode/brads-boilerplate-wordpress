@@ -1,0 +1,25 @@
+{
+  "name": "fictional-university-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preview": "npm-run-all --parallel sync start",
+    "sync": "browser-sync start -p 'july2023.local' --files '**/*.php' 'build/*.js' 'build/*.css'",
+    "start": "wp-scripts start src/index.js our-blocks/container.js our-blocks/banner.js our-blocks/genericheading.js our-blocks/genericbutton.js our-blocks/slideshow our-blocks/slide our-blocks/quiz/quiz-admin.js our-blocks/quiz/quiz-frontend.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@glidejs/glide": "^3.6.0",
+    "@wordpress/icons": "^9.28.0",
+    "@wordpress/scripts": "^26.8.0",
+    "axios": "^1.4.0",
+    "browser-sync": "^2.29.3",
+    "normalize.css": "^8.0.1",
+    "npm-run-all": "^4.1.5",
+    "react-color": "^2.19.3"
+  }
+}

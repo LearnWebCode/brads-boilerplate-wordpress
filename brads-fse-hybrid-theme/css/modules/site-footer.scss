@@ -1,0 +1,73 @@
+.site-footer {
+  padding: 2rem 0 3.5rem 0;
+  background-image: linear-gradient(#fff, #ececec);
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .headline {
+    color: #666;
+    margin-bottom: 0.33rem;
+  }
+
+  &__link {
+    color: #999;
+    text-decoration: none;
+  }
+
+  &__link:hover {
+    color: $mainBlue;
+    text-decoration: underline;
+  }
+
+  &__inner {
+    border-top: 1px dotted #dedede;
+    padding-top: 3.5rem;
+  }
+
+  &__col-one {
+    text-align: center;
+    @include atMedium {
+      text-align: left;
+      width: 33%;
+      float: left;
+    }
+  }
+
+  &__col-two-three-group {
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+    @include atMedium {
+      text-align: left;
+      float: left;
+      width: 42%;
+      margin: 0;
+    }
+  }
+
+  &__col-two {
+    width: 50%;
+    float: left;
+  }
+  &__col-three {
+    width: 50%;
+    float: left;
+  }
+  &__col-four {
+    padding-top: 20px;
+    width: 85%;
+    margin: 0 auto;
+    clear: both;
+    text-align: center;
+    @include atMedium {
+      padding-top: 0;
+      margin: 0;
+      clear: none;
+      text-align: left;
+      width: 25%;
+      float: right;
+    }
+  }
+}

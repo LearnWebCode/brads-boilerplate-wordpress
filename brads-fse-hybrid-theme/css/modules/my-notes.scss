@@ -1,0 +1,157 @@
+/* My Notes */
+.edit-note,
+.delete-note,
+.submit-note {
+  font-size: 0.9rem;
+  background-color: #eee;
+  padding: 8px 16px;
+  display: inline-block;
+  margin-right: 7px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-note {
+  color: #fff;
+  border: none;
+  background-color: $darkOrange;
+  line-height: 1.65;
+}
+
+.submit-note:hover {
+  background-color: adjust-color($darkOrange, $lightness: -10%, $saturation: -20%);
+}
+
+.edit-note,
+.delete-note {
+  @media (min-width: 635px) {
+    position: relative;
+    top: -12px;
+  }
+}
+
+.edit-note:hover,
+.delete-note:hover {
+  background-color: #ddd;
+}
+
+.delete-note {
+  color: red;
+}
+
+.update-note {
+  visibility: hidden;
+}
+
+.update-note--visible {
+  visibility: visible;
+}
+
+.note-title-field {
+  width: 40%;
+  font-size: 1.85rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  color: $mainBlue;
+  border: 1px solid transparent;
+  padding: 7px;
+  outline: none;
+  position: relative;
+  top: 1px;
+
+  @media (max-width: 400px) {
+    width: 100%;
+  }
+
+  @media (min-width: 635px) {
+    width: 65%;
+    font-size: 3.125rem;
+  }
+}
+
+.note-body-field {
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  resize: none;
+  display: block;
+  width: 100%;
+  line-height: 1.65;
+  font-size: 1.15rem;
+  padding: 7px;
+  border: 1px solid transparent;
+  height: 175px;
+  outline: none;
+}
+
+.note-active-field {
+  border: 1px solid #ddd;
+  animation: pulseBorder 0.75s alternate infinite;
+}
+
+@keyframes pulseBorder {
+  0% {
+    border: 1px solid #fff;
+  }
+
+  100% {
+    border: 1px solid #ccc;
+  }
+}
+
+/* Create Note */
+.create-note {
+  background-color: #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.new-note-title {
+  width: 100%;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 1.15rem;
+  box-sizing: border-box;
+}
+
+.new-note-body {
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  margin-bottom: 10px;
+  height: 170px;
+  font-size: 1.15rem;
+  line-height: 1.65;
+}
+
+/* Reveal and Hide Fade Transitions */
+#my-notes {
+  position: relative;
+}
+
+#my-notes li {
+  transition: all 0.4s ease-out;
+  opacity: 1;
+}
+
+#my-notes li.fade-out {
+  height: 0px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  opacity: 0.5;
+}
+
+#my-notes li.fade-in-calc {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0;
+}

@@ -1,0 +1,49 @@
+.main-navigation {
+  padding-top: 2px;
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  ul:before,
+  ul:after {
+    content: " ";
+    display: table;
+  }
+
+  ul:after {
+    clear: both;
+  }
+
+  @include atMedium {
+    float: left;
+    margin-right: 20px;
+  }
+}
+
+.main-navigation li {
+  list-style: none;
+
+  @include atMedium {
+    float: left;
+    padding-left: 20px;
+  }
+}
+
+.main-navigation a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  @include atMedium {
+    display: inline-block;
+    padding: 0;
+  }
+}
+
+.main-navigation .current-menu-item a,
+.main-navigation a:hover {
+  color: $beige;
+}

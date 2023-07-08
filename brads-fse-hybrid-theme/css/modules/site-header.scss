@@ -1,0 +1,109 @@
+.site-header {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+
+  &__avatar {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__avatar img {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+
+  &__menu {
+    visibility: hidden;
+    position: absolute;
+    background-color: adjust-color($mainBlue, $alpha: -0.11, $lightness: -1%);
+    left: 0;
+    right: 0;
+    top: -20px;
+    padding-top: 58px;
+    opacity: 0;
+    transform: translateY(-20%);
+    transition: opacity 0.3s ease-out, visibility 0.3s ease-out, transform 0.3s ease-out;
+    padding-bottom: 20px;
+
+    &--active {
+      opacity: 1;
+      transform: translateY(0);
+      visibility: visible;
+    }
+
+    @include atMedium {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      position: static;
+      background-color: transparent;
+      float: right;
+      padding-top: 0;
+      padding-bottom: 0;
+      top: 0;
+    }
+  }
+
+  &__search-trigger {
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 6px;
+    right: 16px;
+
+    @include atSmall {
+      top: 4px;
+      font-size: 1.4rem;
+    }
+
+    @include atMedium {
+      display: none;
+    }
+  }
+
+  &__menu-trigger {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    position: absolute;
+    z-index: 10;
+    top: 7px;
+    right: 46px;
+
+    @include atSmall {
+      top: 5px;
+      font-size: 1.4rem;
+    }
+
+    @include atMedium {
+      display: none;
+    }
+  }
+
+  &__util {
+    padding: 0 0 0 20px;
+
+    @include atMedium {
+      padding: 0;
+      float: right;
+    }
+  }
+
+  &__btn {
+    margin-right: 20px;
+    @include atMedium {
+      float: left;
+    }
+  }
+
+  .btn--with-photo {
+    margin-right: 0;
+  }
+}

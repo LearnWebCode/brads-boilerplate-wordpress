@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "preview": "npm-run-all --parallel sync start",
-    "sync": "browser-sync start -p 'july2023.local' --files '**/*.php' 'build/*.js' 'build/*.css'",
+    "sync": "browser-sync start -p 'myexample.local' --files '**/*.php' 'build/*.js' 'build/*.css'",
     "start": "wp-scripts start src/index.js our-blocks/container.js our-blocks/banner.js our-blocks/genericheading.js our-blocks/genericbutton.js our-blocks/slideshow our-blocks/slide our-blocks/quiz/quiz-admin.js our-blocks/quiz/quiz-frontend.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

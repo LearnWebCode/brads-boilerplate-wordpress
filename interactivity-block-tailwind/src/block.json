@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "bradsboilerplatetailwind/interactivity-block-tailwind",
+  "version": "0.1.0",
+  "title": "Interactivity Block Tailwind",
+  "category": "widgets",
+  "icon": "smiley",
+  "attributes": {
+    "skyColor": { "type": "string" },
+    "grassColor": { "type": "string" }
+  },
+  "example": {},
+  "supports": {
+    "interactivity": true
+  },
+  "textdomain": "interactivity-block-tailwind",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScriptModule": "file:./view.js"
+}

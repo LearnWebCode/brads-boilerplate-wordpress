@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "makeupnamespace/bradsblockreacttailwind",
+  "version": "0.1.0",
+  "title": "Brads Boilerplate Block Tailwind React",
+  "category": "common",
+  "icon": "welcome-learn-more",
+  "attributes": {
+    "skyColor": {
+      "type": "string"
+    },
+    "grassColor": {
+      "type": "string"
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./frontend.js"
+}

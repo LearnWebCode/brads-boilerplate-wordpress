@@ -1,18 +1,9 @@
 import "./index.scss"
 
-wp.blocks.registerBlockType("makeupnamespace/make-up-block-name", {
-  title: "Brads Boilerplate Block",
-  icon: "welcome-learn-more",
-  category: "common",
-  attributes: {
-    skyColor: { type: "string" },
-    grassColor: { type: "string" }
-  },
-  edit: EditComponent,
-  save: function () {
-    return null
-  }
-})
+import { registerBlockType } from "@wordpress/blocks"
+import metadata from "./block.json"
+
+registerBlockType(metadata.name, { edit: EditComponent })
 
 function EditComponent(props) {
   function updateSkyColor(e) {
@@ -25,8 +16,18 @@ function EditComponent(props) {
 
   return (
     <div className="makeUpYourBlockTypeName">
-      <input type="text" value={props.attributes.skyColor} onChange={updateSkyColor} placeholder="sky color..." />
-      <input type="text" value={props.attributes.grassColor} onChange={updateGrassColor} placeholder="grass color..." />
+      <input
+        type="text"
+        value={props.attributes.skyColor}
+        onChange={updateSkyColor}
+        placeholder="sky color..."
+      />
+      <input
+        type="text"
+        value={props.attributes.grassColor}
+        onChange={updateGrassColor}
+        placeholder="grass color..."
+      />
     </div>
   )
 }

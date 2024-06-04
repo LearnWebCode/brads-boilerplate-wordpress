@@ -1,12 +1,13 @@
 import "./frontend.scss"
 import React, { useState } from "react"
-import ReactDOM from "react-dom"
+import ReactDOM from "react-dom/client"
 
 const divsToUpdate = document.querySelectorAll(".boilerplate-update-me")
 
 divsToUpdate.forEach(div => {
   const data = JSON.parse(div.querySelector("pre").innerText)
-  ReactDOM.render(<OurComponent {...data} />, div)
+  const root = ReactDOM.createRoot(div)
+  root.render(<OurComponent {...data} />)
   div.classList.remove("boilerplate-update-me")
 })
 

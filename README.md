@@ -8,7 +8,7 @@ This repo contains different theme and plugin boilerplate folders. Here's a quic
 
 **brads-boilerplate-theme-tailwind:** The same as above; only it uses Tailwind CSS instead of SCSS.
 
-**brads-fse-hybrid-theme:** This is a block or Full Site Editing (FSE) theme. However, instead of using default/core WP blocks; it uses blocks that we've created as a developer and so we are in 100% control of the HTML / CSS / JS that they output. It also uses PHP for output so the blocks are dynamic.
+**brads-fse-hybrid-theme:** This is a block or Full Site Editing (FSE) theme. However, instead of using default/core WP blocks; it uses blocks that we've created as a developer. It uses PHP for (most of) the output so the blocks are dynamic. Instead of having a separate plugin for each block you need to create this theme let's you create as many of your own blocks all within one single convenient theme.
 
 ## Block Plugins
 
@@ -16,7 +16,7 @@ This repo contains different theme and plugin boilerplate folders. Here's a quic
 
 **interactivity-block-tailwind:** The same as above; only it uses Tailwind CSS instead of SCSS.
 
-**brads-boilerplate-block-plugin:** A block but it does **not** use the Interactivity API: it uses WordPress's copy of Reaact for public visitor JS behavior.
+**brads-boilerplate-block-plugin:** A block but it does **not** use the Interactivity API: it uses WordPress's copy of React for public visitor JS behavior.
 
 **brads-boilerplate-block-plugin-tailwind:** The same above; only it uses Tailwind CSS instead of SCSS.
 

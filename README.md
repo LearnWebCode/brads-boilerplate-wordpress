@@ -2,7 +2,7 @@
 
 This repo contains different theme and plugin boilerplate folders. Here's a quick summary of what makes each one unique.
 
-### Themes
+## Themes
 
 **brads-boilerplate-theme:** This is a traditional / classic (not block theme) that uses SCSS and WordPress's copy of React for public-front end JS instead of the modern Interactivity API.
 
@@ -10,7 +10,7 @@ This repo contains different theme and plugin boilerplate folders. Here's a quic
 
 **brads-fse-hybrid-theme:** This is a block or Full Site Editing (FSE) theme. However, instead of using default/core WP blocks; it uses blocks that we've created as a developer and so we are in 100% control of the HTML / CSS / JS that they output. It also uses PHP for output so the blocks are dynamic.
 
-### Block Plugins
+## Block Plugins
 
 **interactivity-block:** This uses the new Interactivity API in WordPress. However, the official WP example doesn't show how to work with attributes or anything useful that you'd actually spend the next hour or two trying to figure out how to do. This block showcases the basics that I feel most devs will be looking to learn about.
 

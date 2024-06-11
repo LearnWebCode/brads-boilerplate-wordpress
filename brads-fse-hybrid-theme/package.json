@@ -4,9 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "wp-scripts start src/index.js",
+    "blocks": "wp-scripts start --experimental-modules",
+    "build": "run-s buildIndex buildBlocks",
+    "buildIndex": "wp-scripts build src/index.js",
+    "buildBlocks": "wp-scripts build --experimental-modules",
     "preview": "npm-run-all --parallel sync start",
-    "sync": "browser-sync start -p 'myexample.local' --files '**/*.php' 'build/*.js' 'build/*.css'",
-    "start": "wp-scripts start src/index.js our-blocks/container.js our-blocks/banner.js our-blocks/genericheading.js our-blocks/genericbutton.js our-blocks/slideshow our-blocks/slide our-blocks/quiz/quiz-admin.js our-blocks/quiz/quiz-frontend.js",
+    "sync": "browser-sync start -p 'june2024hybrid.local' --files '**/*.php' 'build/*.js' 'build/*.css'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,10 +18,11 @@
   "license": "ISC",
   "dependencies": {
     "@glidejs/glide": "^3.6.0",
-    "@wordpress/icons": "^9.28.0",
-    "@wordpress/scripts": "^26.8.0",
-    "axios": "^1.4.0",
-    "browser-sync": "^2.29.3",
+    "@wordpress/icons": "^9.41.0",
+    "@wordpress/interactivity": "^6.0.0",
+    "@wordpress/scripts": "^27.7.0",
+    "axios": "^1.6.7",
+    "browser-sync": "^3.0.2",
     "normalize.css": "^8.0.1",
     "npm-run-all": "^4.1.5",
     "react-color": "^2.19.3"

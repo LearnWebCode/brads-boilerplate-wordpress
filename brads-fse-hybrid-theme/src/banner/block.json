@@ -1,0 +1,16 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ourblocktheme/banner",
+  "title": "Fictional University Banner",
+  "supports": {
+    "align": ["full"]
+  },
+  "attributes": {
+    "align": { "type": "string", "default": "full" },
+    "imgID": { "type": "number" },
+    "imgURL": { "type": "string" }
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

@@ -1,5 +1,12 @@
 {
-  "version": 2,
+  "version": 3,
+  "customTemplates": [
+    {
+      "name": "emptycanvas",
+      "postTypes": ["page"],
+      "title": "Empty Canvas"
+    }
+  ],
   "styles": {
     "blocks": {
       "core/button": {

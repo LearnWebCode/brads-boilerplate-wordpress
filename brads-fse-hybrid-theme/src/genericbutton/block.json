@@ -1,0 +1,13 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ourblocktheme/genericbutton",
+  "title": "Fictional University Generic Button",
+  "attributes": {
+    "text": { "type": "string" },
+    "size": { "type": "string", "default": "large" },
+    "linkObject": { "type": "object", "default": { "url": "" } },
+    "colorName": { "type": "string", "default": "blue" }
+  },
+  "editorScript": "file:./index.js"
+}

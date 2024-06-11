@@ -471,6 +471,11 @@ li {
   opacity: 0;
 }
 
+.our-admin-container {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
 /* Customize Login Screen */
 body.login .button-primary {
   background-color: #F95738;

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ourblocktheme/slide",
+  "title": "Fictional University Slide",
+  "supports": {
+    "align": ["full"]
+  },
+  "attributes": {
+    "themeimage": { "type": "string" },
+    "align": { "type": "string", "default": "full" },
+    "imgID": { "type": "number" },
+    "imgURL": { "type": "string" }
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

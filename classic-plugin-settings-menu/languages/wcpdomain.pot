@@ -1,0 +1,45 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Our Test Plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-27 19:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.2; wp-5.7.1\n"
+"X-Domain: wcpdomain"
+
+#. Description of the plugin
+msgid "A truly amazing plugin."
+msgstr ""
+
+#. Author of the plugin
+msgid "Brad"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.udemy.com/user/bradschiff/"
+msgstr ""
+
+#. Name of the plugin
+msgid "Our Test Plugin"
+msgstr ""
+
+#: our-first-unique-plugin.php:46
+msgid "This post has"
+msgstr ""
+
+#: our-first-unique-plugin.php:109
+msgid "Word Count"
+msgstr ""
+
+#: our-first-unique-plugin.php:46
+msgid "words"
+msgstr ""

@@ -13,19 +13,17 @@
     "lint:js": "wp-scripts lint-js",
     "packages-update": "wp-scripts packages-update",
     "plugin-zip": "wp-scripts plugin-zip",
-    "tailwindbuild": "tailwindcss -i ./src/style.css -o ./build/style.css --postcss --minify",
-    "tailwindwatch": "tailwindcss -i ./src/style.css -o ./build/style.css --watch --postcss --minify",
+    "tailwindbuild": "npx @tailwindcss/cli -i ./src/style.css -o ./build/style-index.css --minify",
+    "tailwindwatch": "npx @tailwindcss/cli -i ./src/style.css -o ./build/style-index.css --watch --minify",
     "wpstart": "wp-scripts start --experimental-modules",
     "start": "npm-run-all --parallel wpstart tailwindwatch"
   },
   "devDependencies": {
-    "@wordpress/scripts": "^27.9.0"
+    "@wordpress/scripts": "^30.10.0"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.19",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.38",
-    "postcss-nested": "^6.0.1",
-    "tailwindcss": "^3.4.3"
+    "tailwindcss": "^4.0.3",
+    "@tailwindcss/cli": "^4.0.4"
   }
 }

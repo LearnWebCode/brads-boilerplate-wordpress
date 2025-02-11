@@ -1,12 +1,8 @@
-/**
- * The following styles get applied both on the front of your site
- * and in the editor.
- *
- * Replace them with your own styles or remove the file completely.
- */
+@layer theme, base, components, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
 
 .my-unique-plugin-wrapper-class {
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+  @import "tailwindcss/preflight.css" layer(base);
+  @import "tailwindcss/utilities.css" layer(utilities);
 }

@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tailwindbuild": "tailwindcss -i ./src/style.css -o ./build/style.css --postcss --minify",
-    "tailwindwatch": "tailwindcss -i ./src/style.css -o ./build/style.css --watch --postcss --minify",
+    "tailwindbuild": "npx @tailwindcss/cli -i ./src/style.css -o ./build/style-index.css --minify",
+    "tailwindwatch": "npx @tailwindcss/cli -i ./src/style.css -o ./build/style-index.css --watch --minify",
     "preview": "npm-run-all --parallel sync start",
     "sync": "browser-sync start -p 'boilerplate-2024.local' --files '**/*.php' 'build/*.js' 'build/*.css'",
     "wpbuild": "wp-scripts build src/index.js src/frontend.js",
@@ -18,14 +18,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@wordpress/scripts": "^27.9.0",
-    "browser-sync": "^3.0.2",
+    "@wordpress/scripts": "^30.10.0",
+    "browser-sync": "^3.0.3",
     "npm-run-all": "^4.1.5"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.38",
-    "postcss-nested": "^6.0.1",
-    "tailwindcss": "^3.4.3"
+    "@tailwindcss/cli": "^4.0.6",
+    "tailwindcss": "^4.0.6"
   }
 }
